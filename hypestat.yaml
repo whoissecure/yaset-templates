@@ -1,0 +1,7 @@
+name: HypeStat
+use: true
+url: https://hypestat.com/info/:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

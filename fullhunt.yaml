@@ -1,0 +1,10 @@
+name: fullhunt
+use: true
+url: https://fullhunt.io/api/v1/domain/:target/details
+verb: GET
+headers:
+  X-API-KEY: :apikey
+vars:
+  target: engine.target
+  apikey: engine.config.fullhunt.key
+parse: "hosts.#.host"

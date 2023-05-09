@@ -1,0 +1,7 @@
+name: UrlScan
+use: true
+url: https://urlscan.io/api/v1/search/?q=domain::target
+verb: GET
+vars:
+  target: engine.target
+parse: "results.#.task.domain"

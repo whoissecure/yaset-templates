@@ -1,0 +1,7 @@
+name: certspotter
+use: true
+url: https://api.certspotter.com/v1/issuances?domain=:target&expand=dns_names&include_subdomains=true&match_wildcards=true
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

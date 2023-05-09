@@ -1,0 +1,8 @@
+name: hunterio
+use: true
+url: https://api.hunter.io/v2/domain-search?domain=:target&api_key=:apikey
+verb: GET
+vars:
+  target: engine.target
+  apikey: engine.config.hunterio.key
+parse: "data.emails.@join.sources.#.domain"

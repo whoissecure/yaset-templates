@@ -1,0 +1,9 @@
+name: Shodan
+use: true
+url: https://api.shodan.io/dns/domain/:target?key=:apikey
+verb: GET
+vars:
+  target: engine.target
+  apikey: engine.config.shodan.key
+parse: "subdomains"
+appendDomain: true

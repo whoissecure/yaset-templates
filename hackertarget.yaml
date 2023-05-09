@@ -1,0 +1,7 @@
+name: HackerTarget
+use: true
+url: https://api.hackertarget.com/hostsearch/?q=:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

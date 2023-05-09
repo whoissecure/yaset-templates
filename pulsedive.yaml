@@ -1,0 +1,7 @@
+name: PulseDive
+use: true
+url: https://pulsedive.com/api/explore.php?limit=100&q=type%3Ddomain+and+ioc%3D%2A.:target&search=indicators
+verb: GET
+vars:
+  target: engine.target
+parse: "results.#.indicator"

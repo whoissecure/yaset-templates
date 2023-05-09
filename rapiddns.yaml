@@ -1,0 +1,7 @@
+name: rapiddns
+use: true
+url: https://rapiddns.io/subdomain/:target?full=1&down=1
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

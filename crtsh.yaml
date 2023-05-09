@@ -1,0 +1,7 @@
+name: certspotter
+use: true
+url: https://crt.sh/?q=:target&output=json
+verb: GET
+vars:
+  target: engine.target
+parse: "#.common_name"

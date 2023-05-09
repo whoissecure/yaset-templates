@@ -1,0 +1,12 @@
+name: Security Trails
+use: true
+url: https://api.securitytrails.com/v1/domain/:target/subdomains?children_only=false&include_inactive=true
+verb: GET
+headers:
+  APIKEY: :apikey
+  Accept: application/json
+vars:
+  target: engine.target
+  apikey: engine.config.securitytrails.key
+parse: "subdomains"
+appendDomain: true

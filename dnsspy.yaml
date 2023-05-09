@@ -1,0 +1,7 @@
+name: DNSSpy
+use: true
+url: https://dnsspy.io/scan/:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

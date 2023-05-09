@@ -1,0 +1,7 @@
+name: Chinaz
+use: true
+url: https://alexa.chinaz.com/:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

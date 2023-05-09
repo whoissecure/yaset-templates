@@ -1,0 +1,7 @@
+name: leakix
+use: true
+url: https://leakix.net/api/graph/hostname/:target?v%5B%5D=hostname&d=auto&l=1..5&f=3d-force
+verb: GET
+vars:
+  target: engine.target
+parse: "nodes.#._key"

@@ -1,0 +1,11 @@
+name: chaos
+use: true
+url: https://dns.projectdiscovery.io/dns/:target/subdomains
+verb: GET
+headers:
+  Authorization: :apikey
+vars:
+  target: engine.target
+  apikey: engine.config.chaos.key
+parse: "subdomains"
+appendDomain: true

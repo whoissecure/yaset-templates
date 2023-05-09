@@ -1,0 +1,9 @@
+name: Maltiverse
+use: true
+url: https://api.maltiverse.com/search?format=json&from=0&query=hostname.keyword%3A%2A.:target&size=500&sort=creation_time_desc
+verb: GET
+headers:
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3
+vars:
+  target: engine.target
+parse: "hits.hits.#._source.hostname"

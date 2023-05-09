@@ -1,0 +1,7 @@
+name: DNSHistory
+use: true
+url: https://dnshistory.org/subdomains/1/:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

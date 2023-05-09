@@ -1,0 +1,10 @@
+name: bufferover
+use: true
+url: https://tls.bufferover.run/dns?q=.:target
+verb: GET
+headers:
+  x-api-key: :apikey
+vars:
+  target: engine.target
+  apikey: engine.config.bufferover.key
+regexUse: true

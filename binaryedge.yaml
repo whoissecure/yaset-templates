@@ -1,0 +1,10 @@
+name: Binary Edge
+use: true
+url: https://api.binaryedge.io/v2/query/domains/subdomain/:target
+verb: GET
+headers:
+  X-Key: :apikey
+vars:
+  target: engine.target
+  apikey: engine.config.binaryedge.key
+parse: "events"

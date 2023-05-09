@@ -1,0 +1,10 @@
+name: Netlas
+use: true
+url: https://app.netlas.io/api/domains/?q=*.:target
+verb: GET
+headers:
+  X-Api-Key: :apikey
+vars:
+  target: engine.target
+  apikey: engine.config.netlas.key
+parse: "items.#.data.domain"
