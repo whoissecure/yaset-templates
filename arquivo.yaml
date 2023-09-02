@@ -1,0 +1,7 @@
+name: Arquivo
+use: true
+url: https://arquivo.pt/textsearch?maxItems=500&offset=0&q=:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

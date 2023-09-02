@@ -1,0 +1,8 @@
+name: VirusTotal
+use: true
+url: https://www.virustotal.com/vtapi/v2/domain/report?domain=:target&apikey=:apikey
+verb: GET
+vars:
+  target: engine.target
+  apikey: engine.config.virustotal.key
+regexUse: true

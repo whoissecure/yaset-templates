@@ -1,0 +1,7 @@
+name: Robtex
+use: true
+url: https://freeapi.robtex.com/pdns/forward/:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true

@@ -1,0 +1,10 @@
+name: AlienVault URL list
+use: true
+url: https://otx.alienvault.com/api/v1/indicators/domain/:target/url_list
+verb: GET
+headers:
+  X-Otx-Api-Key: :apikey
+vars:
+  target: engine.target
+  apikey: engine.config.alienvault.key
+parse: "url_list.#.hostname"

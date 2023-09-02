@@ -1,0 +1,7 @@
+name: Digitorus
+use: true
+url: https://certificatedetails.com/:target
+verb: GET
+vars:
+  target: engine.target
+regexUse: true
